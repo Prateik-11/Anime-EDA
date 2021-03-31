@@ -59,10 +59,6 @@ sparql <-
     FILTER ( strlen(?contentRating)<=2)
    }'
 
-#below line would be ideal, but it consumes too much memorys and my laptop crashes
-#animetable1 <- rdf_query(anime1, sparql)
-#queries need to be done few at a time
-
 anime <- rdf_query(anime_rdf, sparql)
 
 #remove some deleted shows
